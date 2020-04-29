@@ -113,6 +113,11 @@ void draw() {
   /////////////////
   
   if (Scan_varer == true) {
+    
+      //TITEL
+    textSize(100);
+    fill(255);
+    text("Scan en varer", 332, 148);
       
       //KNAPPER
         //tilbage
@@ -140,6 +145,11 @@ void draw() {
   ////////////////
   
   if (Se_varer == true) {
+    
+      //TITEL
+    textSize(100);
+    fill(255);
+    text("Se varer", 444, 148);
       
       //KNAPPER
         //tilbage
