@@ -126,6 +126,10 @@ void draw() {
     fill(255);
     text("Scan en varer", 332, 148);
       
+      //TEKSTFELT
+    fill(191); //farve på knap
+    rect (334,198,613,445);
+      
       //KNAPPER
         //tilbage
     fill(100, 0, 0); //farve på knap
