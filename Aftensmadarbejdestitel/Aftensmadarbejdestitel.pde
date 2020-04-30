@@ -3,13 +3,20 @@ boolean Opskrifter = false;
 boolean Scan_varer = false;
 boolean Se_varer = false;
 
+String mad1, mad2, mad3, mad4;
+
 void setup() {
   size(1280, 800);
+  
+  mad1 = "Mel";
+  mad2 = "Mælk";
+  mad3 = "Smør";
+  mad4 = "Æg";
 }
 
 void draw() {
     
-  background(0); 
+  background(0);
   
   ///////////////
   // KAPITEL I //
@@ -168,6 +175,7 @@ void draw() {
         }
       }
     }
+    
   }
 
 }
