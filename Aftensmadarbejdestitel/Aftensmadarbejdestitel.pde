@@ -3,13 +3,20 @@ boolean Opskrifter = false;
 boolean Scan_varer = false;
 boolean Se_varer = false;
 
+String mad1, mad2, mad3, mad4;
+
 void setup() {
   size(1280, 800);
+  
+  mad1 = "Mel";
+  mad2 = "Mælk";
+  mad3 = "Smør";
+  mad4 = "Æg";
 }
 
 void draw() {
     
-  background(0); 
+  background(0);
   
   ///////////////
   // KAPITEL I //
@@ -113,6 +120,15 @@ void draw() {
   /////////////////
   
   if (Scan_varer == true) {
+    
+      //TITEL
+    textSize(100);
+    fill(255);
+    text("Scan en varer", 332, 148);
+      
+      //TEKSTFELT
+    fill(191); //farve på felt
+    rect (334,198,613,445);
       
       //KNAPPER
         //tilbage
@@ -140,7 +156,40 @@ void draw() {
   ////////////////
   
   if (Se_varer == true) {
-      
+    
+      //TITEL
+    textSize(100);
+    fill(255);
+    text("Se varer", 444, 148);
+    
+      //TEKSTFELT
+        //felt højre
+    fill(191); //farve på felt
+    rect (80,193,521,454);
+    
+    fill(0); //farve på streger
+    rect (80,268,521,1);
+    rect (80,343,521,1);
+    rect (80,419,521,1);
+    rect (80,495,521,1);
+    rect (80,571,521,1);
+    rect (253,193,1,455);
+    rect (427,193,1,455);
+    
+        //felt venstre
+    fill(191); //farve på felt
+    rect (679,193,521,454);
+    
+    fill(0); //farve på streger
+    rect (679,268,521,1);
+    rect (679,343,521,1);
+    rect (679,419,521,1);
+    rect (679,495,521,1);
+    rect (679,571,521,1);
+    rect (852,193,1,455);
+    rect (1026,193,1,455);
+    
+    
       //KNAPPER
         //tilbage
     fill(100, 0, 0); //farve på knap
@@ -158,6 +207,7 @@ void draw() {
         }
       }
     }
+    
   }
 
 }
